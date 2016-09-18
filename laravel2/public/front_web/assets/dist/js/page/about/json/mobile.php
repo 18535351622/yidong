@@ -1,0 +1,6 @@
+<?php
+header("content-type:application/json; charset=UTF-8");
+$json = <<<ENT
+{"rs":1,"msg":null,"code":null,"data":[{"id":28,"status":1,"createTime":1460634094000,"modifyTime":1467278967000,"tbId":3,"rowIndex":10,"data":"{\"title\":\"【私家小团，仅有10席】美国洛杉矶+拉斯维加斯+旧金山+圣地亚哥+1号公路+环球影城+大峡谷13日10晚跟团游\",\"imageSrc\":\"//www.quimg.com/community/img/config/2016-05/301610555850.jpg\",\"tag\":\"七月出品\",\"tourDay\":\"13天10晚\",\"price\":\"28332\",\"currency\":\"￥\",\"lightSpot\":\"· 资深旅游达人手工打造美西品质路线，仅开放10席尊贵体验&lt;br&gt;· 17哩湾-洛杉矶最美路段，4小时车程饱览壮阔太平洋&lt;br&gt;· 豪华15座高顶奔驰，平均每日行车不超过4小时&lt;br&gt;· 全程入住标准4星豪华酒店，充分睡眠，不早起&lt;br&gt;· 圣地亚哥游轮+航母、赌城夜游、西峡谷与环球影城等，一价全包\",\"lightSpotH5\":\"· 旅游达人手工打造美西品质路线&lt;br&gt;· 全程入住标准4星豪华酒店，充分睡眠不早起\",\"wechatUrl\":\"http://mp.weixin.qq.com/s?__biz=MzA4MzE0MzcwNQ==&mid=410596210&idx=1&sn=b3551dd97773de4aa71ef36d26c9b8ea&scene=4#wechat_redirect\",\"detailUrl\":\"#/localjoin-detail-tou_BU00USPT01\",\"h5Url\":\"#/localjoin-detail-tou_BU00USPT01\",\"soudout\":\"1\",\"theme\":\"私家团、亲子\",\"destination\":\"北美\"}","modifyTimeFmt":"20160630 17:29:27","createTimeFmt":"20160414 19:41:34"}]}
+ENT;
+echo $json;

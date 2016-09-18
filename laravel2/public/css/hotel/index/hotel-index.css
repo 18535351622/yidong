@@ -1,0 +1,216 @@
+/* ============================================== continent start =================================================== */
+
+/* ++++++++++++++
+ * banner start + 
+ * ++++++++++++++
+ */
+.hotel_banner_wrapper {position: relative;width: 100%;height: 400px;}
+#hotelBannerBg {position: absolute;width: 100%;height: 400px;overflow: hidden;top: 0;left: 0;}
+.hotel_banner_list {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.hotel_banner_list li {float: left;width: 100%;height: 100%;}
+.hotel_banner_list li a {display: block;width: 100%;height: 100%;}
+.hotel_banner1 {background: url(//www.quimg.com/a9442/img/page/hotel/index/banner/banner1.jpg ) no-repeat center;} 
+.hotel_banner2 {background: url(//www.quimg.com/a9101/img/page/hotel/index/banner/banner2.jpg) no-repeat center;} 
+.hotel_banner3 {background: url(//www.quimg.com/a9101/img/page/hotel/index/banner/banner3.jpg) no-repeat center;}
+.hotel_banner_usa {background: url(//www.quimg.com/a9068/img/page/hotel/index/banner/continent/usa.jpg) no-repeat center;}
+.hotel_banner_oceania {background: url(//www.quimg.com/a9068/img/page/hotel/index/banner/continent/oceania.jpg) no-repeat center;}
+.hotel_banner_europe {background: url(//www.quimg.com/a9068/img/page/hotel/index/banner/continent/europe.jpg) no-repeat center;}
+.btn_list {position: absolute;width: auto;right: 20px;bottom: 20px;}
+.btn_item {float: left;margin-right: 8px;width: 12px;height: 12px;background-image: url(//www.quimg.com/a12088/img/page/index/index-all.png);background-position: 0 0;text-align: center;color: #fff;}
+.btn_item:hover, .btn_item.active {cursor: pointer;background-position: -22px 0;}
+
+.search_box {position: relative;top: 0;left: 0;width: 250px;height: 400px;padding: 0 20px;}
+.search_bg {position: absolute;left: 0;top: 0;width: 290px;height: 100%;background-color: #fff;z-index: 0;}
+.search_opt {position: relative;z-index: 1;}
+.sb_title {font-size: 18px;color: #333;height: 20px;line-height: 20px;padding: 59px 0 29px 0;}
+.input_wrapper {position: relative;margin-bottom: 20px;border: 1px solid #cfdfdf;}
+.search_opt input[type="text"] {height: 31px;line-height:31px;border: none;color: #a3a3a3;font-size: 14px;}
+.ie7 .search_opt input[type="text"] {height: 26px;}
+.city_input {width: 236px;}
+.check_date input[type="text"] {width: 150px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat 145px -215px #fff;}
+.check_in_date {margin-right: 5px;}
+.search_btn {display: block;}
+
+.map_search {position: absolute;font-size: 14px;left: 20px;bottom: 50px;padding-left: 15px;height: 16px;line-height: 16px;  color: #333;font-weight: bold;}
+.map_search i {position: absolute;width: 13px;height: 16px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat -76px -671px;top: 0;left: 0;}
+
+/* ++++++++++++++++++++++
+ * continent main start +
+ * ++++++++++++++++++++++
+ */
+.main_wrapper {padding: 40px 0 25px;}
+.left_wrapper {float: left;width: 900px;}
+.type_list {float: left;margin-left: 40px;margin-top: 7px;}
+.type_list_li {margin-left: 9px;display: block;float: left;position: relative;padding-left: 3px;}
+.type_list_li a{display: block;float: left;font-size: 16px;padding: 2px 6px 5px;line-height: 18px;color: #333;}
+.type_list_more {display: block;background-position: -146px -615px;background-repeat: no-repeat;height: 21px;color: #848484;font-size: 14px;line-height: 21px;text-align: center;float: right;margin-top: 10px;margin-right: 2px;}
+.type_list_more:hover {color: #f08300;}
+.type_list_li_active a {color: #0aaa96;}
+.type_list_li_active i {position: absolute;width: 12px;height: 4px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat -314px -709px;top: 27px;left: 50%;margin-left: -5px;}
+.product_box {padding: 20px 0 35px 0;}
+.img_wrapper, .plr_top, .plr_bottom, .pl_right, .pl_left {float: left;}
+.pl_left {width: 290px;}
+.pl_right {width: 890px;}
+.plr_top {padding-bottom: 20px;}
+.plr_top .img_link {height: 170px;}
+.plr_bottom .img_link {height: 155px;}
+.img_link img {display: block;}
+.img_wrapper {position: relative;margin-right: 20px;}
+.poi_text {position: absolute;top: 0;left: 0;line-height: 35px;width: 100%;color: #fff;display: inline-block;*zoom: 1;*display: inline; overflow: hidden;text-shadow: 1px 1px 1px #333;}
+.pt_city {float: left;font-size: 18px;margin-left: 15px;}
+.pt_city.big {font-size: 24px;}
+.pt_num {float: left;font-size: 14px;padding-top:2px;margin-left: 15px;}
+.pt_num.big {font-size: 16px;padding-top: 4px;}
+.no_mr {margin-right: 0!important;}
+
+.product_wrapper {margin-top: 20px;background-color: #fff;padding: 20px 0 20px 20px;overflow: hidden;}
+.product_wrapper img {display: block;}
+.product_wrapper .p_left {float: left;width: 405px;height: 772px;}
+.p_left > div {position: relative;width: 100%;height: 376px;margin-bottom: 20px;background-color: #edf0f5;line-height: 22px;}
+.p_left .score_label {position: absolute;top: 10px;left: 10px;width: 66px;height: 56px;padding-top: 10px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat -157px -611px;font-style: normal;font-size: 12px;text-align: center;color: #fff;}
+.p_left .inner {position: relative;padding: 15px 15px 10px 15px;}
+.p_left .inner h2 {font-size: 14px;color: #333;width: 265px;height: 44px;}
+.p_left .inner .hotel_star_box {position: absolute;top: 20px;right: 15px;}
+.p_left .inner .hotel_star {display: block;margin: 0;}
+.inner_comment {position: relative;padding-top: 6px;color: #848484;}
+.inner_comment img {display: block;}
+.inner_price {position: absolute;color: #f08300;font-size: 12px;bottom: 10px;right: 18px;}
+.product_wrapper .p_right {float: left;width: 455px;height: 772px;margin-left: 20px;}
+.p_right > div {position: relative;float: left;width: 207px;height: 244px;background-color: #edf0f5;margin-right: 20px;margin-bottom: 20px;}
+.p_right .inner {position: relative;padding: 8px;}
+.p_right .inner h2 {font-size: 14px;color: #333;width: 192px;height: 36px;}
+.p_right .price {position: absolute;top: 10px;left: 0;background-color: #f08300;color: #fff;font-size: 12px;padding: 3px 7px;}
+.p_right .price span {font-size: 16px;}
+.inner_level {position: absolute;font-size: 14px;color: #333;right: 8px;bottom: 8px;}
+
+.choice_reason {padding: 15px;}
+.choice_reason li {padding-top: 15px;}
+li.cr_item {position: relative;padding-left: 30px;}
+li.cr_item i {position: absolute;top: 15px;left: 0;width: 22px;height: 22px;background-image: url(//www.quimg.com/a10484/img/page/hotel/all.png);background-repeat: no-repeat;}
+i.cr_icon1 {background-position: 0 -284px;}
+i.cr_icon2 {background-position: 0 -359px;}
+i.cr_icon3 {background-position: 0 -433px;}
+i.cr_icon4 {background-position: 0 -505px;}
+i.cr_icon5 {background-position: 0 -578px;}
+.cr_divide {border-bottom: 1px dotted #ddd;}
+.faq_wrapper {margin-top: 35px;padding: 20px;}
+.faq_list {background-color: #fff;}
+.faq_list li {padding-top: 5px;text-indent: -7px;padding-left: 10px;}
+.faq_list li a {color: #848484;font-size: 14px;}
+.faq_list li a:hover{color: #f08300;}
+.img_link {position: relative;display: block;line-height: 0;overflow: hidden;background: url(//www.quimg.com/a4535/img/common/loading.gif) no-repeat center #fff;}
+.img_link:hover .img_wrapper_cover{display: block;}
+.img_wrapper_cover {display: none;width: 100%;height: 28px;position: absolute;background-color: #000;opacity: .6;filter: alpha(opacity = 60);bottom: 0;left: 0;z-index: 1;}
+.bottom_price {display: none;position: absolute;bottom: 0;right: 10px;color: #f08300;height: 28px;line-height: 28px;z-index: 3;font-size: 12px;}
+.img_link:hover .img_wrapper_cover, .img_link:hover .bottom_price {display: block;}
+
+#valid-wrapper .customer_reminder{margin-left: 14px;}
+#valid-wrapper #customer-wrapper{margin-left: 75px;}
+.theme_link {cursor: pointer;}
+
+/* ============================================== continent end =================================================== */
+
+
+
+
+/* ============================================== country start =================================================== */
+
+/* ++++++++++++++++++++
+ * country main start +
+ * ++++++++++++++++++++
+ */
+.country_left {float: left;width: 290px;}
+.country_left > div, .coutry_right > div {margin-bottom: 20px;}
+.coutry_right {float: left;width: 890px;margin-left: 20px;}
+
+.contry_city {background-color: #fff;padding: 20px 0 0 20px;}
+.contry_city h2 {font-size: 26px;line-height: 26px;padding-bottom: 10px;}
+.contry_city h2 label {font-size: 18px;margin-left: 10px;}
+.contry_city li {position: relative;float: left;width: 197px;height: 150px;margin-right: 20px;margin-bottom: 20px;}
+.contry_city .mask_layer {position: absolute;height: 54px;left: 0;bottom: 10px;color: #fff;text-indent: 10px;padding-right: 10px;}
+.mask_layer .mask {position: absolute;width: 100%;height: 100%;background-color: #000;opacity: 0.6;filter: alpha(opacity=60);z-index: 0;}
+.mask_layer h3 {position: relative;z-index: 3;font-size: 18px;padding-top: 5px;}
+.mask_layer p {position: relative;z-index: 3;font-size: 13px;}
+.city_list {background-color: #fff;padding: 20px;}
+.city_list h2 {font-size: 18px;color: #0aaa96;}
+.city_list ul {padding-top: 10px;}
+.city_list li a{font-size: 14px;color: #848484;float: left;height: 30px;line-height: 30px;width: 280px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.city_list li a:hover {color: #f08300;cursor: pointer;}
+.city_list li span {float: left;}
+.city_list li .name {max-width: 240px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+/* ============================================== country end =================================================== */
+
+
+/* ============================================== global start =================================================== */
+
+.global_banner {width: 1200px;height: 400px;margin:0 auto;}
+.global_search {position: relative;overflow: hidden;border-radius: 2px;height: 400px;width: 290px;float:left;}
+.global_search .mask {position: absolute;width: 100%;height: 100%;background-color: #fff;z-index: 0;box-shadow: 0 0 3px #d8d8d8}
+.global_search > div {position: relative;z-index: 3;padding: 24px 0 0 20px;}
+.global_search .group {border: 1px solid #cfdfdf;border-radius: 2px;  margin-bottom: 20px;}
+.global_search .group input {height: 32px;line-height: 32px;border: none;  color: #848484;}
+.global_search .city_group {margin-right: 18px;}
+.global_search .hotel_xyz{width: 90%}
+.global_search .date_group {margin-right: 10px;border: 1px solid #cfdfdf;width: 250px;}
+.global_search .city_position {width: 90%;font-size: 18px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat 317px -657px;  font-size: 14px;color: #848484;}
+.global_search .date_group .date {width: 150px;font-size: 13px;color:#848484;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat;  /*border: 1px solid #cfdfdf;*/border-radius: 2px;line-height: 30px;height: 30px;}
+.global_search .date_group .date_in {background-position: 140px -26px;}
+.global_search .date_group .date_out {background-position: 140px -26px;}
+.global_search .submit {border:none;}
+.global_title_wrapper {padding-top: 40px;}
+.global_title_wrapper .title_tab h3 {font-size: 24px;font-weight: normal;margin-left: 0;text-align: center;}
+.global_hot_city {overflow: hidden;padding-top: 20px;}
+.global_hot_city .group {float: left;width: 284px;margin-right: 21px;height:550px;}
+.global_hot_city .last {margin-right: 0;}
+.global_hot_city .group .box {display: block;position: relative;margin-bottom: 20px;}
+.global_hot_city .group img {display: block;}
+.global_hot_city .group .box .name {position: absolute;color: #fff;font-size: 24px;top: 5px;left: 10px;text-shadow: 1px 1px 1px #333;}
+.global_hot_city .group .box .name span {padding-left: 10px;font-size: 16px;}
+.global_country {background-color: #fff;margin-top: 20px;padding: 15px;}
+.global_country .box {border-bottom: 1px dotted #d9d9d9;margin-bottom: 16px;}
+.global_country .last {margin-bottom: 0;border-bottom: none;}
+.global_country .box > a {color: #0aaa96;font-size: 16px;}
+.global_country .box > a:hover {text-decoration: underline;}
+.global_country .last > a:hover {text-decoration: none;cursor:default;}
+.global_country .box .list {overflow: hidden;padding: 16px 0;line-height: 24px;}
+.global_country .box .list a {font-size: 14px;float: left;width: 245px;color: #333;padding-left: 40px; overflow: hidden;white-space: nowrap;text-overflow:ellipsis;}
+.global_country .box .list a span,.global_country .box .list .unclick {color: #848484;font-size:14px;}
+.global_country .box .list a:hover, .global_country .box .list a:hover span {color: #0aaa96;text-decoration: underline;}
+.global_country .last .list a:hover,.global_country .last .list a:hover span{color: #848484;text-decoration: none;cursor:default;}
+.index_map_search{  position: relative;font-size: 14px;color: #333;font-weight: bold;height: 16px;line-height: 16px;margin-top: 15px;display: block;}
+.index_map_search i {position: relative;width: 13px;height: 16px;background: url(//www.quimg.com/a10484/img/page/hotel/all.png) no-repeat -76px -671px;top: 1px;left: 0;  margin-right: 5px;display: inline-block;}
+.global_hot_city .group a:hover img{opacity: 0.8;filter:Alpha(opacity=80);}
+
+.date_title{color: #848484;display: inline-block;height: 30px;line-height: 30px; font-size: 14px;margin-left: 5px;padding-right: 10px; border-right: 1px dashed #cfdfdf;}
+
+/* ============================================== global end =================================================== */
+
+/*global hotel banner*/
+.gs_title{color: #333;font-size: 18px;padding:30px 0 26px;}
+.ghb_li{width: 270px;height: 148px;padding:10px;background-color: #fff;font-size: 14px;color: #333;position: relative;box-sizing:border-box;-moz-box-sizing:border-box; float:left;margin: 0 20px 20px 0;}
+.ie7 .ghb_li{width: 250px;height: 128px}
+.global_hotel_banner{background-image: url(//www.quimg.com/a7370/img/page/hotel/index/continent/banner_bg.jpg);width: 890px;height: 400px;float:right; position: relative;}
+.ghb_li img ,.ghb_li .ghb_li_right{float:left;}
+.ghb_tag{position: absolute;bottom: 10px;left:10px;color:#fff;font-size:18px;background-color: #f08300;padding: 3px 5px;z-index: 9;}
+.ghb_li .ghb_li_right{color:#333;width: 129px;height: 100%;margin-left: 7px;position: relative;}
+.ghb_city,.ghb_woqu_price,.ghb_booking_price{color:#848484}
+.ghb_tag span{font-size: 14px}
+.ghb_woqu_price,.ghb_booking_price{position: absolute;bottom: 0px;left:0px;}
+.ghb_woqu_price{bottom: 20px}
+.ie7 .gnb_ul_right .ghb_woqu_price{bottom: 37px}
+.ie7 .gnb_ul_right .ghb_booking_price{bottom: 17px}
+.ghb_li_star span{background: url('//www.quimg.com/a7370/img/page/hotel/index/continent/wq_all.png') no-repeat 0 0;width: 11px;height: 11px;display: inline-block;}
+.ghb_li_star span.active{background-position: -14px 0px}
+.global_hotel_banner ul{width: 580px; padding-left: 20px;}
+.gnb_ul_right{position: absolute;right:0px;width:270px;height:316px;}
+.gnb_ul_right img{width:250px;height: 162px}
+.global_hotel_banner .title{padding: 17px 0 26px 362px;color: #fff;}
+.gnb_ul_right .ghb_li_right{width:243px;height:130px;  padding-top: 22px;box-sizing:border-box;-moz-box-sizing:border-box;}
+.ie7 .gnb_ul_right{height: 296px;top:64px;}
+.gnb_ul_right .ghb_tag{left:auto;right:10px;}
+.ghb_li:hover .ghb_li_title{color:#f08300}
+.ghb_li:hover img{opacity: 0.8;filter:Alpha(opacity=80);}
+.ghb_li_title{height: 38px;overflow: hidden;}
+.gnb_ul_right .ghb_li_title{height: 20px;width: 243px;text-overflow: ellipsis;white-space: nowrap;}
+ 

@@ -1,0 +1,47 @@
+.usa_text{position: relative;padding-bottom: 15px;}
+.page_outer{float: right;}
+.bottom_qa_wrapper{margin-top: 70px;}
+.zoo_wrapper{width: 920px;height: 560px;background: #004e84;border-radius: 6px;position: fixed;left: 50%; top: 50%;margin-top: -273px;margin-left: -460px;}
+.close_btn{display: block; width: 50px; height: 50px; background: #fff;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -968px -51px no-repeat;  position: absolute;right: -20px;top: -20px;}
+.zoo_content{width: 920px;height: 554px;background: #2779ca;border-radius: 6px;position: relative;overflow: hidden;}
+.zoo_header{width: 827px; height: 70px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -39px -28px no-repeat;margin: 0 auto;margin-top: 39px;line-height: 68px;color: #8d5907;font-size: 30px;text-align: center;}
+.zoo_main{overflow: hidden;} 
+.count_down_area{float: left;width: 486px;position: relative;}
+.activity_title{width: 453px; height: 52px; background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -39px -149px no-repeat; margin: 40px 0 0 50px;}
+.activity_price_666{width: 390px; height: 64px; background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -101px -392px no-repeat;margin: 20px 0 0 115px; }
+.activity_price_888{width: 390px; height: 64px; background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -101px -215px no-repeat;margin: 20px 0 0 115px; }
+.activity_price_888_17{width: 390px; height: 64px; background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -101px -497px no-repeat;margin: 20px 0 0 115px; }
+.activity_price_999{width: 390px; height: 64px; background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -101px -296px no-repeat;margin: 20px 0 0 115px; }
+.activity_country{color: #fff;margin-left: 48px;margin-top: 20px;position: relative;}
+.country_name{font-size: 22px;margin-bottom: 15px;}
+.woqu_price{margin-right: 60px;}
+.line_through{width: 236px; height: 7px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -594px -245px no-repeat;position: absolute;top: 50px;left: 60px;}
+.count_down{width: 394px; height: 54px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -822px -314px no-repeat;margin: 25px 0 0 25px;overflow: hidden;line-height: 50px;}
+.count_down p{font-size: 20px;margin-left: 50px;}
+.count_down span{color: #fff000;margin:  0 5px 0 5px;}
+.zhen_know{display: block;width: 136px; height: 40px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -568px -155px no-repeat;margin: 0 auto;margin-top: 30px;}
+
+.activty_explain{height: 350px; float: left;border-left: 1px dashed #5d9bd7; color: #fff;margin: 54px 0 0 35px;padding-left: 40px;position: relative;}
+.activty_explain h3{font-size: 22px;margin: 35px 0 20px 0;}
+.activty_explain p{margin-bottom:8px; }
+.font_blank{margin-left: 17px;}
+.explain_bg{display: block;width: 144px; height: 136px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -955px -142px no-repeat;position: absolute;right: 0px; top: 0px;z-index: 0;}
+.activity_explain_inner{position: relative;z-index: 10;}
+.start_area{width: 742px; height: 32px;background: #2779ca;margin: 0 auto; color: #fee900;font-size: 18px;text-align: center;line-height: 32px;position: relative;}
+.start_area span{font-size: 22px;font-weight: bold;}
+.unfold_btn{width: 86px; height: 26px;display: block;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -736px -165px no-repeat;position: absolute;top: 3px;right: 44px;}
+
+/*travel zoo activity end*/
+.zoo_end_wrapper{width: 920px;height: 646px;background: #29293c;border-radius: 6px;position: fixed;left: 50%; top: 50%;margin-top: -323px;margin-left: -460px;}
+.end_inner{width: 920px;height: 640px;background: #424257;border-radius: 6px; overflow: hidden;}
+.end_tag{width: 471px; height: 78px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -748px -389px no-repeat;position: absolute;top: 28px;left: -10px;color: #fff;font-size: 40px;font-weight: bold;text-align: center;line-height: 65px;}
+.end_content{overflow: hidden;margin-top: 150px;}
+.content_left{float: left;width: 328px;height: 220px; border-right: 1px dashed #7b7b8a; color: #fff;font-size: 20px;margin-left: 80px;}
+.content_left p{margin-bottom:12px; }
+.content_left a{color: #f08300; text-decoration: underline;}
+.content_right{float: left;position: relative; color: #fff; width: 480px; height: 222px;}
+.content_right p {margin: 0 0 14px 40px; }
+.dia_code{width: 233px; height: 221px;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -71px -627px no-repeat;position: absolute;right: 0px;top: 0px;}
+.img_link{width: 763px; height: 197px; display: block;margin: 0 auto;background: url(//www.quimg.com/a2334/img/activity/travel-zoo/travel-zoo.png) -431px -672px no-repeat;margin-top: 50px;}
+.zoo_mask_wrapper{position: fixed;top: 0px;left: 0px;z-index: 1000;width: 100%;height: 100%;}
+.zoo_mask_inner{position: absolute;width: 100%;height: 100%;top: 0;left: 0;background-color: #000;opacity: 0.3;filter: alpha(opacity=30);}

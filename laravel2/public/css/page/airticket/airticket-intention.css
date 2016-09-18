@@ -1,0 +1,57 @@
+.dialog-cover {position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity: 0.1;filter: alpha(opacity=10);z-index:990;}
+.intention-dialog {width: 900px;min-height: 500px;position: fixed;left: 50%;top:50%;margin-left: -450px;margin-top: -300px;background: #fff;color: #333;z-index: 991}
+.int-header {height: 40px;line-height: 40px;background-color: #e5fbfb;padding-left: 20px;font-size: 16px; position: relative;}
+.intention-close {position: absolute;right: 10px;top: 10px;width: 18px;height: 18px;background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) -58px -112px no-repeat;cursor: pointer;}
+.int-content {overflow: hidden;}
+.int-top {overflow: hidden;border-bottom: 1px dashed #d9d9d9;height: 170px;}
+.int-top-l {width: 340px;float: left;margin-left: 20px;}
+.int-top-r {float: right;}
+.int-bottom {min-height: 240px;}
+.int-bottom-l {float: left;width: 570px;}
+.int-bottom-r {float: left;width: 320px;}
+.int-left {float: left;width: 570px;border-right: 1px dashed #d9d9d9;min-height: 460px;}
+.int-contact-info {padding-left: 15px;}
+.block-title {margin: 25px 0 15px 0; }
+.int-contact-info input{border: 1px solid #cfdfdf;height: 20px;width: 245px;}
+.int-contact-info select{border: 1px solid #cfdfdf;height: 28px;width: 118px;margin-right: 10px;}
+.int-contact-info .form-group {margin-bottom: 10px;position: relative;}
+.form-group .input-short {width: 117px;}
+.group-label {position: relative;margin-right: 10px;}
+.group-label span {position: absolute;left: -10px;top: 2px;}
+.error-tips {font-size: 12px;color:red;position: absolute;top: 28px;z-index: 2;background: #fef2e0;padding: 2px 13px 5px;box-shadow: 0px 0px 2px #b6b0ac;color: #333;}
+.phone-error{left: 167px;}
+.form-group .error-input {border: 1px solid #ff0000;}
+.user-error {left: 39px;}
+
+.int-tour-info {padding-left: 30px;}
+.tour-group {font-size: 0px;margin-bottom: 10px;}
+.tour-group input {border: 1px solid #cfdfdf;height: 20px;width: 140px;margin-right: 10px;}
+.del-tour-group {text-decoration: underline; cursor: pointer;}
+.tour-group .tour-date-input{width: 116px;background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) 97px -107px no-repeat;}
+.tour-index {display: inline-block; width: 20px;height: 28px;line-height: 28px;text-align: center;color: #848484;background-color: #f0f0f0;}
+.add-new-tour {height: 25px;line-height: 25px;width: 445px;border: 1px dashed #0aaa96;margin-left: 20px;padding-left: 10px;color: #0aaa96;cursor: pointer;}
+.show-orther-need {display: inline-block;margin:20px 0 25px 50px;position: relative;text-decoration: underline;cursor: pointer;}
+.show-orther-need i {width: 11px;height: 6px;background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) -130px -112px no-repeat;position: absolute;right: -15px;top:6px;}
+.int-bottom-l .on i {background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) -145px -112px no-repeat;}
+.other-need {margin:20px 0 0 50px;}
+.other-need select{border: 1px solid #cfdfdf;width: 65px;height: 28px;margin: 0 6px;}
+.other-group {margin-bottom: 10px;}
+.other-need .seat-select {width: 242px;}
+.other-need textarea {border: 1px solid #cfdfdf;resize:none;width: 410px;height: 55px;margin-left: 2px;}
+.other-group .notice-label {vertical-align: top;}
+.button-group {padding-left: 53px;}
+.int-submit {display: inline-block;}
+.btn-contact-cc {text-decoration: underline;margin-left: 20px;}
+.int-right {float: right;width: 305px;}
+.int-title {display: inline-block; margin: 25px 0 10px 0;border-bottom: 2px solid #0aaa96}
+.int-right p {font-size: 14px;color: #848484;}
+.int-icon-list {font-size: 0px; margin-top: 35px;}
+.int-icon-list i {display: inline-block;width: 88px;height: 88px;background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) 999px 999px no-repeat;margin-right: 30px; cursor: pointer;}
+.int-icon-list .int-icon1 {background-position: 0 0 ;}
+.int-icon-list .int-icon2 {background-position: -99px 0;}
+.int-icon-list .int-icon3 {background-position: -196px 0;}
+.contact-cc {display: block;margin: 100px auto 0 auto;width: 180px;}
+.submit-success-tips {margin: 145px 0 0 345px;}
+.success-hint {margin-bottom: 20px;position: relative;}
+.success-hint i {width: 36px;height: 36px;background: url(//quimg.com/img/page/airline-ticket/air-ticket.png) -88px -105px no-repeat;position: absolute;left: -50px;top: -3px;}
+.btn-int-close {display: block;margin-top: 30px;}
