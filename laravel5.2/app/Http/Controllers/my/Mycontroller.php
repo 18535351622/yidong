@@ -12,7 +12,7 @@ class Mycontroller extends Controller
     //
     public function anyIndex()
     {
-        echo "我是MY模块";
+        echo "我是MY模块11111111";
         // return redirect('my/my/lists');
     }
     public function anyLists()
