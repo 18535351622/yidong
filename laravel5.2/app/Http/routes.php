@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +26,23 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
+/**
+ * 我的模块路由
+ */
+Route::group(['prefix' =>'my','namespace'=>'my'], function () {
+    Route::controller('my','MyController');
+});
+
+/**
+ * 首页模块路由
+ */
+Route::group(['prefix' =>'home','namespace'=>'home'], function () {
+    Route::controller('home','HomeController');
+});
+
+/**
+ * 学习模块路由
+ */
+Route::group(['prefix' =>'study','namespace'=>'study'], function () {
+    Route::controller('study','StudyController');
 });
