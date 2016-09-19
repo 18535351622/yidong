@@ -13,7 +13,7 @@ class Mycontroller extends Controller
     public function anyIndex()
     {
         echo 123;
-        return redirect('my/my/lists');
+        // return redirect('my/my/lists');
     }
     public function anyLists()
     {
