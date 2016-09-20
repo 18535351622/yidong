@@ -9,10 +9,9 @@ use DB;
 header("content-type:text/html;charset=utf-8");
 class Mycontroller extends Controller
 {
-    //
     public function anyIndex(){
-        $result=DB::table('admin')->get();
-        print_r($result);die;
+        $result=DB::table('school')->get();
+        return view('my/index',['arr'=>$result]);
 
 
     }
