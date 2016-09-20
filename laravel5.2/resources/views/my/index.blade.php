@@ -20,9 +20,6 @@
             <td>{{$v['school_desc']}}</td>
         </tr>
     @endforeach
-
-
 </table>
-
 </body>
 </html>
