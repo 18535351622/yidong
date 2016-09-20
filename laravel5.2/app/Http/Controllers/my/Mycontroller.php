@@ -3,16 +3,18 @@
 namespace App\Http\Controllers\my;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use DB;
+header("content-type:text/html;charset=utf-8");
 class Mycontroller extends Controller
 {
     //
-    public function anyIndex()
-    {
-       
+    public function anyIndex(){
+        $result=DB::table('admin')->get();
+        print_r($result);die;
+
+
     }
     public function anyLists()
     {
