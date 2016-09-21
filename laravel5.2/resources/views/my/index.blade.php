@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-<table>
+<table border="1">
     <tr>
         <td>ID</td>
         <td>学校名称</td>
@@ -18,6 +18,7 @@
             <td>{{$v['school_name']}}</td>
             <td><img src="{{$v['school_badge']}}"/></td>
             <td>{{$v['school_desc']}}</td>
+            <td><a href="{{ URL::to('my/my/lists') }}?phone=18535351622">删除</a></td>
         </tr>
     @endforeach
 </table>
