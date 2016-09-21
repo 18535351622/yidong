@@ -5,22 +5,32 @@
     <title>Document</title>
 </head>
 <body>
-<table border="1">
+<table align="center">
     <tr>
-        <td>ID</td>
-        <td>学校名称</td>
-        <td>学校图片</td>
-        <td>学校简介</td>
+        <td>
+            <div  style="width: 100px;height: 100px;background-color: red">
+                <table>
+                    <tr>
+                        <td>
+                            {{$arr['user_tel']}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
     </tr>
-    @foreach($arr as $k=>$v)
-        <tr>
-            <td>{{$v['school_id']}}</td>
-            <td>{{$v['school_name']}}</td>
-            <td><img src="{{$v['school_badge']}}"/></td>
-            <td>{{$v['school_desc']}}</td>
-            <td><a href="{{ URL::to('my/my/lists') }}?phone=18535351622">删除</a></td>
-        </tr>
-    @endforeach
+    <tr>
+        <td><a>我的照片</a></td>
+    </tr>
+    <tr>
+        <td><a href="{{ url('my/my/lists') }}?phone=18535351622">我的身份证</a></td>
+    </tr>
+    <tr>
+        <td><a>退出登录</a></td>
+    </tr>
+    <tr>
+        <td><a>关于我们</a></td>
+    </tr>
 </table>
 </body>
 </html>
