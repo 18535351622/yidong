@@ -9,10 +9,8 @@ use DB;
 header("content-type:text/html;charset=utf-8");
 class Mycontroller extends Controller
 {
-
-    /**
-     * @action:我的模块中
-     * @
+    /*
+     *index方法
      */
     public function anyIndex(){
         $result=DB::table('school')->get();
