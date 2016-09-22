@@ -24,7 +24,15 @@
 | it contains. The "web" middleware group is defined in your HTTP
 | kernel and includes session state, CSRF protection, and more.
 |
-*/
+
+/**
+ * 登录模块路由
+ */
+Route::any('login','login\LoginController@index');
+Route::post('phone_add','login\LoginController@phone_add');
+//测试展示
+Route::get('bbb','login\LoginController@bbb');
+
 
 /**
  * 我的模块路由

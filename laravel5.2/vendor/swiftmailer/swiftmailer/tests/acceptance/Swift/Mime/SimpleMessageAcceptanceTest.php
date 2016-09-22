@@ -742,7 +742,7 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
 
         $file = $this->_createEmbeddedFile();
         $file->setContentType('image/jpeg');
-        $file->setFilename('myimage.jpg');
+        $file->setFilename('myimg.jpg');
         $file->setBody('<image data>');
 
         $message->attach($file);
@@ -776,9 +776,9 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
             ' boundary="(.*?)"'."\r\n".
             "\r\n\r\n".
             '--\\2'."\r\n".
-            'Content-Type: image/jpeg; name=myimage.jpg'."\r\n".
+            'Content-Type: image/jpeg; name=myimg.jpg'."\r\n".
             'Content-Transfer-Encoding: base64'."\r\n".
-            'Content-Disposition: inline; filename=myimage.jpg'."\r\n".
+            'Content-Disposition: inline; filename=myimg.jpg'."\r\n".
             'Content-ID: <'.$cid.'>'."\r\n".
             "\r\n".
             preg_quote(base64_encode('<image data>'), '~').
@@ -821,7 +821,7 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
 
         $file = $this->_createEmbeddedFile();
         $file->setContentType('image/jpeg');
-        $file->setFilename('myimage.jpg');
+        $file->setFilename('myimg.jpg');
         $file->setBody('<image data>');
 
         $part = $this->_createMimePart();
@@ -855,9 +855,9 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
             'foo <img src=3D"cid:'.$cid.'" />'.//=3D is just = in QP
             "\r\n\r\n".
             '--\\1'."\r\n".
-            'Content-Type: image/jpeg; name=myimage.jpg'."\r\n".
+            'Content-Type: image/jpeg; name=myimg.jpg'."\r\n".
             'Content-Transfer-Encoding: base64'."\r\n".
-            'Content-Disposition: inline; filename=myimage.jpg'."\r\n".
+            'Content-Disposition: inline; filename=myimg.jpg'."\r\n".
             'Content-ID: <'.$cid.'>'."\r\n".
             "\r\n".
             preg_quote(base64_encode('<image data>'), '~').
@@ -905,7 +905,7 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
 
         $file = $this->_createEmbeddedFile();
         $file->setContentType('image/jpeg');
-        $file->setFilename('myimage.jpg');
+        $file->setFilename('myimg.jpg');
         $file->setBody('<image data>');
 
         $message->attach($file);
@@ -936,9 +936,9 @@ class Swift_Mime_SimpleMessageAcceptanceTest extends \PHPUnit_Framework_TestCase
             ' boundary="(.*?)"'."\r\n".
             "\r\n\r\n".
             '--\\1'."\r\n".
-            'Content-Type: image/jpeg; name=myimage.jpg'."\r\n".
+            'Content-Type: image/jpeg; name=myimg.jpg'."\r\n".
             'Content-Transfer-Encoding: base64'."\r\n".
-            'Content-Disposition: inline; filename=myimage.jpg'."\r\n".
+            'Content-Disposition: inline; filename=myimg.jpg'."\r\n".
             'Content-ID: <'.$cid.'>'."\r\n".
             "\r\n".
             preg_quote(base64_encode('<image data>'), '~').

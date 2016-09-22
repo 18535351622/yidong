@@ -8,14 +8,15 @@
 <table align="center">
     <tr>
         <td>
-            <div  style="width: 100px;height: 100px;background-color: red">
-                <table>
-                    <tr>
-                        <td>
-                            {{$arr['user_tel']}}
-                        </td>
-                    </tr>
-                </table>
+            <div  style="width: 140px;height: 100px;background-color: red">
+                <img src="{{$arr['user_header']}}" width="140" height="100">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-left: 20px;">
+            <div  style="width:80px;height: 20px">
+                {{$arr['user_tel']}}
             </div>
         </td>
     </tr>
