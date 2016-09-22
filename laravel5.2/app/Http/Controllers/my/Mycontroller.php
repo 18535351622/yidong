@@ -21,6 +21,7 @@ class Mycontroller extends Controller
         //根据注册人的手机号进行查询
         $phone=Request::get('phone');
         $result=DB::table('user')->where(['user_tel'=>$phone])->first();
+        session(['key'=>123]);
 
 //         根据用户的ID进行查询
 //        $user_id=Request::get('user_id');
@@ -40,6 +41,7 @@ class Mycontroller extends Controller
      * 作用：身份证上传显示页面
      */
     public function getLists(){
+        echo session('key');die;
 
         $phone=Request::get('phone');
          return view('my/upload');

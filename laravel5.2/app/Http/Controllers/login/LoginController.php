@@ -61,6 +61,7 @@ class Logincontroller extends CommonController
      * 展示页面
      * */
     public function bbb(){
+        echo session('key');die;
         $arr=DB::table('user')->get();
         return view('login/list',['arr'=>$arr]);
 
