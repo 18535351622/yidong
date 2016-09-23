@@ -65,15 +65,14 @@ class Logincontroller extends CommonController
         echo session('key');die;
         $arr=DB::table('user')->get();
         return view('login/list',['arr'=>$arr]);
-=======
->>>>>>> xiaojun
+    }
 
 
     /*
      *退出方法
      */
     public function loginout(){
-      
+      echo 1;
     }
 
 
