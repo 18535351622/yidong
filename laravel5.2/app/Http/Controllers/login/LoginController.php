@@ -28,11 +28,17 @@ class Logincontroller extends CommonController
         if(preg_match($rule, $data['phone'])){
             $arr=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
             if($arr){
+
                 session(['user_tel'=>$arr['user_tel'],'user_id'=>$arr['user_id']]);
                 echo $this -> success( 10004 ,'登录成功',$arr);
                 //测试数据
                 print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));die;
                 return redirect('ceshi');
+
+            }else{
+
+                echo $this -> failure( 10004 ,'没有此用户');
+                print_r(json_decode($this -> failure( 10004 ,'没有此用户'),true));die;
             }
         }else{
             echo $this -> failure( 10002 , '请输入真确的手机号' );die;

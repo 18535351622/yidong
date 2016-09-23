@@ -32,6 +32,7 @@ class Logincontroller extends CommonController
             {
                 echo $this -> failure( 10001 , '此手机号已注册，请更换手机号重新注册' );
                 print_r(json_decode($this -> failure( 10001 , '此手机号已注册，请更换手机号重新注册' ),true));
+                die;
             }
             else
             {
@@ -41,18 +42,16 @@ class Logincontroller extends CommonController
                 $arr=DB::table('user')->insertGetId($result);
                 if($arr){
                    $data1=DB::table('user')->where(['user_id'=>$arr])->first();
-                    //记录session
                     session(['user_id'=>$data1['user_id'],'user_tel'=>$data1['user_tel']]);
                     echo $this ->success( $data1,"注册成功",10003);
                     //测试
-                    print_r(json_decode($this ->success( $data1,"注册成功",10003),true));die;
+                    print_r(json_decode($this ->success( $data1,"注册成功",10003),true));
                     return redirect('bbb');
                 }
             }
 
         }else{
             echo $this -> failure( 10002 , '请输入真确的手机号' );
-            //测试数据
             print_r(json_decode($this -> failure( 10002 , '请输入真确的手机号' ),true));die;
         }
     }
@@ -61,6 +60,8 @@ class Logincontroller extends CommonController
      * 展示页面测试
      */
     public function bbb(){
+        echo session('user_id');
+        echo session('user_tel');
         $arr=DB::table('user')->get();
         return view('sign/list',['arr'=>$arr]);
 
