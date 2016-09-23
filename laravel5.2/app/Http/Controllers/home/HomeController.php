@@ -88,10 +88,10 @@ class HomeController extends Controller
 
     //点击大学展示 大学简介和大学课程
     public function anyDetails(){
-        //$id=$_GET['id'];
+        $id=$_GET['id'];
         $users = DB::table('school')
              ->join('course', 'course.school_id', '=', 'school.school_id')
-            ->where('course.school_id',1)
+            ->where('course.school_id',$id)
             ->get();
         echo json_encode($users);
 
