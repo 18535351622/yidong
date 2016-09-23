@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\home;
 
 use Illuminate\Http\Request;
+use App\api\functions;
 use App\Http\Requests;
 use DB;
 use App\Http\Controllers\Controller;
@@ -13,7 +14,8 @@ class HomeController extends Controller
     public function anyIndex()
     {
         $users = DB::table('school')->limit(6)->get();
-        echo json_encode($users);
+        echo functions::success($users);
+
 
 
         //print_r($users);exit();
@@ -89,11 +91,17 @@ class HomeController extends Controller
     //点击大学展示 大学简介和大学课程
     public function anyDetails(){
         $id=$_GET['id'];
-        $users = DB::table('school')
-             ->join('course', 'course.school_id', '=', 'school.school_id')
-            ->where('course.school_id',$id)
-            ->get();
-        echo json_encode($users);
+        if(empty($id)){
+            $users = DB::table('school')
+                ->join('course', 'course.school_id', '=', 'school.school_id')
+                ->where('course.school_id',$id)
+                ->get();
+            echo functions::success($users);die();
+
+        }else{
+            echo functions::failure('1','现在还有没具体内容  敬请期待!!!');
+        }
+
 
     }
 }
