@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -71,6 +71,10 @@ Route::group(['prefix' =>'home','namespace'=>'home'], function () {
 /**
  * 学习模块路由
  */
-Route::group(['prefix' =>'study','namespace'=>'study'], function () {
-    Route::controller('study','StudyController');
-});
+
+
+Route::group(['namespace' => 'study'], function () {
+
+        Route::controller('study', 'StudyController');
+    });
+
