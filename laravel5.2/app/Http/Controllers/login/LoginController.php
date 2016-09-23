@@ -26,28 +26,13 @@ class Logincontroller extends CommonController
         $data=Request::all();
         $rule = "/^\d{11}$/";
         if(preg_match($rule, $data['phone'])){
-           //检测是否注册过
-            $result=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
-            if($result)
-            {
-                echo $this -> failure( 10001 , '此手机号已注册，请更换手机号重新注册' );
-                echo "<br>";
-                print_r(json_decode($this -> failure( 10001 , '此手机号已注册，请更换手机号重新注册' ),true));
-            }
-            else
-            {
-                $result['user_tel']=$data['phone'];
-                $number=rand(1,5);
-                $result['user_header']='myimg/'.$number.'.jpg';
-                $arr=DB::table('user')->insertGetId($result);
-                if($arr){
-                   $data1=DB::table('user')->where(['user_id'=>$arr])->first();
-                    echo $this ->success( $data1,"注册成功",10003);
-                    echo "<br>";
-                    print_r(json_decode($this ->success( $data1,"注册成功",10003),true));
-                    die;
-                    return redirect('bbb');
-                }
+            $arr=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
+            if($arr){
+                session(['user_tel'=>$arr['user_tel'],'user_id'=>$arr['user_id']]);
+                echo $this -> success( 10004 ,'登录成功',$arr);
+                //测试数据
+                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));die;
+                return redirect('ceshi');
             }
         }else{
             echo $this -> failure( 10002 , '请输入正确的手机号' );
@@ -74,13 +59,6 @@ class Logincontroller extends CommonController
     public function loginout(){
       echo 1;
     }
-
-
-
-
-
-
-
 
     /*
      *测试显示页面
