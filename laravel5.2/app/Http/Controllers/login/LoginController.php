@@ -29,9 +29,9 @@ class Logincontroller extends CommonController
             $arr=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
             if($arr){
                 session(['user_tel'=>$arr['user_tel'],'user_id'=>$arr['user_id']]);
-                echo $this -> success( 10004 ,'登录成功',$arr);die;
+                echo $this -> success( 10004 ,'登录成功',$arr);
                 //测试数据
-                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));
+                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));die;
                 return redirect('ceshi');
             }
         }else{
@@ -47,13 +47,6 @@ class Logincontroller extends CommonController
     public function loginout(){
       
     }
-
-
-
-
-
-
-
 
     /*
      *测试显示页面

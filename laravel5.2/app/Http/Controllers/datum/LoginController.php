@@ -35,7 +35,8 @@ class Logincontroller extends CommonController
             $result=DB::table('user')->where(['user_tel'=>$data['user_tel']])->first();
             //记录session
             session(['user_id'=>$result['user_id'],'user_tel'=>$result['user_tel']]);
-            echo $this ->success( $result,"修改成功",10005);die;
+            echo $this ->success( $result,"修改成功",10005);
+            print_r(json_decode($this ->success( $result,"修改成功",10005),true));
         }
     }
 
