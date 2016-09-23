@@ -35,7 +35,7 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
         $this->array = array(
             'hello' => 'world',
             'always' => 'be happy',
-            'user.login' => 'drak',
+            'user.sign' => 'drak',
             'csrf.token' => array(
                 'a' => '1234',
                 'b' => '4321',
@@ -94,8 +94,8 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
 
     public function testGetDefaults()
     {
-        $this->assertNull($this->bag->get('user2.login'));
-        $this->assertEquals('default', $this->bag->get('user2.login', 'default'));
+        $this->assertNull($this->bag->get('user2.sign'));
+        $this->assertEquals('default', $this->bag->get('user2.sign', 'default'));
     }
 
     /**
@@ -126,7 +126,7 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($array, $this->bag->all());
         $this->assertNull($this->bag->get('hello'));
         $this->assertNull($this->bag->get('always'));
-        $this->assertNull($this->bag->get('user.login'));
+        $this->assertNull($this->bag->get('user.sign'));
     }
 
     public function testRemove()
@@ -139,9 +139,9 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
         $this->bag->remove('always');
         $this->assertNull($this->bag->get('always'));
 
-        $this->assertEquals('drak', $this->bag->get('user.login'));
-        $this->bag->remove('user.login');
-        $this->assertNull($this->bag->get('user.login'));
+        $this->assertEquals('drak', $this->bag->get('user.sign'));
+        $this->bag->remove('user.sign');
+        $this->assertNull($this->bag->get('user.sign'));
     }
 
     public function testRemoveExistingNamespacedAttribute()
@@ -165,7 +165,7 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
         return array(
             array('hello', 'world', true),
             array('always', 'be happy', true),
-            array('user.login', 'drak', true),
+            array('user.sign', 'drak', true),
             array('csrf.token', array('a' => '1234', 'b' => '4321'), true),
             array('csrf.token/a', '1234', true),
             array('csrf.token/b', '4321', true),
@@ -175,7 +175,7 @@ class NamespacedAttributeBagTest extends \PHPUnit_Framework_TestCase
             array('category/fishing/first', 'cod', true),
             array('category/fishing/second', 'sole', true),
             array('category/fishing/missing/second', null, false),
-            array('user2.login', null, false),
+            array('user2.sign', null, false),
             array('never', null, false),
             array('bye', null, false),
             array('bye/for/now', null, false),

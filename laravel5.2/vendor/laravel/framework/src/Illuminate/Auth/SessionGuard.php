@@ -271,7 +271,7 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
 
         // If a username is set on the HTTP basic request, we will return out without
         // interrupting the request lifecycle. Otherwise, we'll need to generate a
-        // request indicating that the given credentials were invalid for login.
+        // request indicating that the given credentials were invalid for sign.
         if ($this->attemptBasic($this->getRequest(), $field, $extraConditions)) {
             return;
         }
@@ -280,7 +280,7 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
     }
 
     /**
-     * Perform a stateless HTTP Basic login attempt.
+     * Perform a stateless HTTP Basic sign attempt.
      *
      * @param  string  $field
      * @param  array  $extraConditions
@@ -430,14 +430,14 @@ class SessionGuard implements StatefulGuard, SupportsBasicAuth
 
         // If we have an event dispatcher instance set we will fire an event so that
         // any listeners will hook into the authentication events and run actions
-        // based on the login and logout events fired from the guard instances.
+        // based on the sign and logout events fired from the guard instances.
         $this->fireLoginEvent($user, $remember);
 
         $this->setUser($user);
     }
 
     /**
-     * Fire the login event if the dispatcher is set.
+     * Fire the sign event if the dispatcher is set.
      *
      * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
      * @param  bool  $remember

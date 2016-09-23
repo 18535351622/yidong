@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Lang;
 trait ThrottlesLogins
 {
     /**
-     * Determine if the user has too many failed login attempts.
+     * Determine if the user has too many failed sign attempts.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return bool
@@ -24,7 +24,7 @@ trait ThrottlesLogins
     }
 
     /**
-     * Increment the login attempts for the user.
+     * Increment the sign attempts for the user.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return int
@@ -70,7 +70,7 @@ trait ThrottlesLogins
     }
 
     /**
-     * Get the login lockout error message.
+     * Get the sign lockout error message.
      *
      * @param  int  $seconds
      * @return string
@@ -79,11 +79,11 @@ trait ThrottlesLogins
     {
         return Lang::has('auth.throttle')
             ? Lang::get('auth.throttle', ['seconds' => $seconds])
-            : 'Too many login attempts. Please try again in '.$seconds.' seconds.';
+            : 'Too many sign attempts. Please try again in '.$seconds.' seconds.';
     }
 
     /**
-     * Clear the login locks for the given user credentials.
+     * Clear the sign locks for the given user credentials.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return void
@@ -107,7 +107,7 @@ trait ThrottlesLogins
     }
 
     /**
-     * Get the maximum number of login attempts for delaying further attempts.
+     * Get the maximum number of sign attempts for delaying further attempts.
      *
      * @return int
      */
@@ -117,7 +117,7 @@ trait ThrottlesLogins
     }
 
     /**
-     * The number of seconds to delay further login attempts.
+     * The number of seconds to delay further sign attempts.
      *
      * @return int
      */

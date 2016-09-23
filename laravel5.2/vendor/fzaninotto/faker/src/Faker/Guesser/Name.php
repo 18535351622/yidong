@@ -39,7 +39,7 @@ class Name
                     return $generator->lastName;
                 };
             case 'username':
-            case 'login':
+            case 'sign':
                 return function () use ($generator) {
                     return $generator->userName;
                 };

@@ -26,12 +26,30 @@
 |
 
 /**
+ * 注册模块路由
+ */
+Route::any('sign','sign\LoginController@index');
+Route::post('phone_add','sign\LoginController@phone_add');
+//测试展示
+Route::get('bbb','sign\LoginController@bbb');
+
+/**
  * 登录模块路由
  */
 Route::any('login','login\LoginController@index');
-Route::post('phone_add','login\LoginController@phone_add');
+Route::any('phone_login','login\LoginController@phone_login');
 //测试展示
-Route::get('bbb','login\LoginController@bbb');
+Route::any('ceshi','login\LoginController@ceshi');
+//退出
+Route::any('loginout','login\LoginController@loginout');
+
+/**
+ *我的资料
+ */
+Route::any('datum','datum\LoginController@index');
+Route::any('datum_add','datum\LoginController@datum_add');
+
+
 
 
 /**

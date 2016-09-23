@@ -113,10 +113,10 @@ class RequestMatcherTest extends \PHPUnit_Framework_TestCase
     public function testPathWithLocaleIsNotSupported()
     {
         $matcher = new RequestMatcher();
-        $request = Request::create('/en/login');
+        $request = Request::create('/en/sign');
         $request->setLocale('en');
 
-        $matcher->matchPath('^/{_locale}/login$');
+        $matcher->matchPath('^/{_locale}/sign$');
         $this->assertFalse($matcher->matches($request));
     }
 

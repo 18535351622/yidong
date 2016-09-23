@@ -682,9 +682,9 @@ EOF
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.blade.php?r=site/login">Login</a>
+        <a href="/index.blade.php?r=site/sign">Login</a>
     </div>
-    <form id="login-form" action="/index.blade.php?r=site/login" method="post">
+    <form id="sign-form" action="/index.blade.php?r=site/sign" method="post">
         <button type="submit" name="Click 'Here'">Submit</button>
     </form>
 </body>
@@ -703,9 +703,9 @@ HTML;
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.blade.php?r=site/login">Login</a>
+        <a href="/index.blade.php?r=site/sign">Login</a>
     </div>
-    <form id="login-form" action="/index.blade.php?r=site/login" method="post">
+    <form id="sign-form" action="/index.blade.php?r=site/sign" method="post">
         <button type="submit" name='Click "Here"'>Submit</button>
     </form>
 </body>
@@ -762,9 +762,9 @@ HTML;
 <html lang="en">
 <body>
     <div id="action">
-        <a href="/index.blade.php?r=site/login">Login</a>
+        <a href="/index.blade.php?r=site/sign">Login</a>
     </div>
-    <form id="login-form" action="/index.blade.php?r=site/login" method="post">
+    <form id="sign-form" action="/index.blade.php?r=site/sign" method="post">
         <button type="submit">Submit</button>
     </form>
 </body>
@@ -772,7 +772,7 @@ HTML;
 HTML;
 
         $crawler = new Crawler($html);
-        $filtered = $crawler->filterXPath("descendant-or-self::*[@id = 'login-form']");
+        $filtered = $crawler->filterXPath("descendant-or-self::*[@id = 'sign-form']");
 
         $this->assertCount(0, $filtered->selectLink('Login'));
         $this->assertCount(1, $filtered->selectButton('Submit'));

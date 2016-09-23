@@ -61,7 +61,7 @@ class Swift_Transport_Esmtp_AuthHandler implements Swift_Transport_EsmtpHandler
     }
 
     /**
-     * Set the Authenticators which can process a login request.
+     * Set the Authenticators which can process a sign request.
      *
      * @param Swift_Transport_Esmtp_Authenticator[] $authenticators
      */
@@ -71,7 +71,7 @@ class Swift_Transport_Esmtp_AuthHandler implements Swift_Transport_EsmtpHandler
     }
 
     /**
-     * Get the Authenticators which can process a login request.
+     * Get the Authenticators which can process a sign request.
      *
      * @return Swift_Transport_Esmtp_Authenticator[]
      */
