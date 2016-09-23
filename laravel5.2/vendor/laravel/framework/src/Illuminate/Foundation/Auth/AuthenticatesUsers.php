@@ -11,7 +11,7 @@ trait AuthenticatesUsers
     use RedirectsUsers;
 
     /**
-     * Show the application login form.
+     * Show the application sign form.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,7 +21,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Show the application login form.
+     * Show the application sign form.
      *
      * @return \Illuminate\Http\Response
      */
@@ -34,11 +34,11 @@ trait AuthenticatesUsers
             return view($view);
         }
 
-        return view('auth.login');
+        return view('auth.sign');
     }
 
     /**
-     * Handle a login request to the application.
+     * Handle a sign request to the application.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -49,7 +49,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Handle a login request to the application.
+     * Handle a sign request to the application.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -59,7 +59,7 @@ trait AuthenticatesUsers
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
-        // the login attempts for this application. We'll key this by the username and
+        // the sign attempts for this application. We'll key this by the username and
         // the IP address of the client making these requests into this application.
         $throttles = $this->isUsingThrottlesLoginsTrait();
 
@@ -75,8 +75,8 @@ trait AuthenticatesUsers
             return $this->handleUserWasAuthenticated($request, $throttles);
         }
 
-        // If the login attempt was unsuccessful we will increment the number of attempts
-        // to login and redirect the user back to the login form. Of course, when this
+        // If the sign attempt was unsuccessful we will increment the number of attempts
+        // to sign and redirect the user back to the sign form. Of course, when this
         // user surpasses their maximum number of attempts they will get locked out.
         if ($throttles && ! $lockedOut) {
             $this->incrementLoginAttempts($request);
@@ -86,7 +86,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Validate the user login request.
+     * Validate the user sign request.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return void
@@ -119,7 +119,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Get the failed login response instance.
+     * Get the failed sign response instance.
      *
      * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -134,7 +134,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Get the failed login message.
+     * Get the failed sign message.
      *
      * @return string
      */
@@ -189,7 +189,7 @@ trait AuthenticatesUsers
     }
 
     /**
-     * Get the login username to be used by the controller.
+     * Get the sign username to be used by the controller.
      *
      * @return string
      */

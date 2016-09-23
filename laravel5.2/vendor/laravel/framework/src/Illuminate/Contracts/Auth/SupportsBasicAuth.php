@@ -14,7 +14,7 @@ interface SupportsBasicAuth
     public function basic($field = 'email', $extraConditions = []);
 
     /**
-     * Perform a stateless HTTP Basic login attempt.
+     * Perform a stateless HTTP Basic sign attempt.
      *
      * @param  string  $field
      * @param  array  $extraConditions

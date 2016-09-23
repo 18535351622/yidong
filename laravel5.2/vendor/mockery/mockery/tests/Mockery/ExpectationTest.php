@@ -1809,7 +1809,7 @@ class ExpectationTest extends MockeryTestCase
     public function testAnExampleWithSomeExpectationAmends()
     {
         $service = $this->container->mock('MyService');
-        $service->shouldReceive('login')->with('user', 'pass')->once()->andReturn(true);
+        $service->shouldReceive('sign')->with('user', 'pass')->once()->andReturn(true);
         $service->shouldReceive('hasBookmarksTagged')->with('php')->once()->andReturn(false);
         $service->shouldReceive('addBookmark')->with('/^http:/', \Mockery::type('string'))->times(3)->andReturn(true);
         $service->shouldReceive('hasBookmarksTagged')->with('php')->once()->andReturn(true);
@@ -1827,7 +1827,7 @@ class ExpectationTest extends MockeryTestCase
     public function testAnExampleWithSomeExpectationAmendsOnCallCounts()
     {
         $service = $this->container->mock('MyService');
-        $service->shouldReceive('login')->with('user', 'pass')->once()->andReturn(true);
+        $service->shouldReceive('sign')->with('user', 'pass')->once()->andReturn(true);
         $service->shouldReceive('hasBookmarksTagged')->with('php')->once()->andReturn(false);
         $service->shouldReceive('addBookmark')->with('/^http:/', \Mockery::type('string'))->times(3)->andReturn(true);
         $service->shouldReceive('hasBookmarksTagged')->with('php')->twice()->andReturn(true);
@@ -1846,7 +1846,7 @@ class ExpectationTest extends MockeryTestCase
     public function testAnExampleWithSomeExpectationAmendsOnCallCounts_PHPUnitTest()
     {
         $service = $this->getMock('MyService2');
-        $service->expects($this->once())->method('login')->with('user', 'pass')->will($this->returnValue(true));
+        $service->expects($this->once())->method('sign')->with('user', 'pass')->will($this->returnValue(true));
         $service->expects($this->exactly(3))->method('hasBookmarksTagged')->with('php')
             ->will($this->onConsecutiveCalls(false, true, true));
         $service->expects($this->exactly(3))->method('addBookmark')

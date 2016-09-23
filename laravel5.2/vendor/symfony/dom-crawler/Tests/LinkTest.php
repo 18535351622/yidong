@@ -118,13 +118,13 @@ class LinkTest extends \PHPUnit_Framework_TestCase
             array('?a=b', 'http://localhost/bar#foo', 'http://localhost/bar?a=b'),
             array('?a=b', 'http://localhost/bar/', 'http://localhost/bar/?a=b'),
 
-            array('http://login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),
-            array('https://login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),
+            array('http://sign.foo.com/foo', 'http://localhost/bar/', 'http://sign.foo.com/foo'),
+            array('https://sign.foo.com/foo', 'https://localhost/bar/', 'https://sign.foo.com/foo'),
             array('mailto:foo@bar.com', 'http://localhost/foo', 'mailto:foo@bar.com'),
 
             // tests schema relative URL (issue #7169)
-            array('//login.foo.com/foo', 'http://localhost/bar/', 'http://login.foo.com/foo'),
-            array('//login.foo.com/foo', 'https://localhost/bar/', 'https://login.foo.com/foo'),
+            array('//sign.foo.com/foo', 'http://localhost/bar/', 'http://sign.foo.com/foo'),
+            array('//sign.foo.com/foo', 'https://localhost/bar/', 'https://sign.foo.com/foo'),
 
             array('?foo=2', 'http://localhost?foo=1', 'http://localhost?foo=2'),
             array('?foo=2', 'http://localhost/?foo=1', 'http://localhost/?foo=2'),
@@ -132,7 +132,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
             array('?foo=2', 'http://localhost/bar/?foo=1', 'http://localhost/bar/?foo=2'),
             array('?bar=2', 'http://localhost?foo=1', 'http://localhost?bar=2'),
 
-            array('foo', 'http://login.foo.com/bar/baz?/query/string', 'http://login.foo.com/bar/foo'),
+            array('foo', 'http://sign.foo.com/bar/baz?/query/string', 'http://sign.foo.com/bar/foo'),
 
             array('.', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),
             array('./', 'http://localhost/foo/bar/baz', 'http://localhost/foo/bar/'),
