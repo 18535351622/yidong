@@ -45,7 +45,7 @@ class Logincontroller extends CommonController
                     session(['user_id'=>$data1['user_id'],'user_tel'=>$data1['user_tel']]);
                     echo $this ->success( $data1,"注册成功",10003);
                     //测试
-                    print_r(json_decode($this ->success( $data1,"注册成功",10003),true));
+                    print_r(json_decode($this ->success( $data1,"注册成功",10003),true));die;
                     return redirect('bbb');
                 }
             }
