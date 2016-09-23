@@ -28,38 +28,33 @@ class Logincontroller extends CommonController
         if(preg_match($rule, $data['phone'])){
             $arr=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
             if($arr){
+//               session(['user_id'=>$arr['user_id']]);
+//               session(['user_tel'=>$arr['user_tel']]);
 
-                session(['user_tel'=>$arr['user_tel'],'user_id'=>$arr['user_id']]);
                 echo $this -> success( 10004 ,'登录成功',$arr);
                 //测试数据
-                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));die;
-                return redirect('ceshi');
+                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));
+//                return redirect('ceshi');
 
             }else{
 
                 echo $this -> failure( 10004 ,'没有此用户');
                 print_r(json_decode($this -> failure( 10004 ,'没有此用户'),true));die;
             }
+
+
         }else{
-            echo $this -> failure( 10002 , '请输入真确的手机号' );die;
+            echo $this -> failure( 10002 , '请输入真确的手机号' );
+            print_r(json_decode($this -> failure( 10002 , '请输入真确的手机号' ),true));die;
         }
-    }
-
-
-
-    /*
-     *退出方法
-     */
-    public function loginout(){
-      
     }
 
     /*
      *测试显示页面
      */
     public function ceshi(){
-        echo session('user_tel');
-        echo session('user_id');
+      echo session('user_id');
+      echo session('user_tel');
     }
 
 

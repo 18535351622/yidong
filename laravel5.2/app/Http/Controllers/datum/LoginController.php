@@ -34,10 +34,21 @@ class Logincontroller extends CommonController
         if($res){
             $result=DB::table('user')->where(['user_tel'=>$data['user_tel']])->first();
             //记录session
-            session(['user_id'=>$result['user_id'],'user_tel'=>$result['user_tel']]);
+//            session(['user_id'=>$result['user_id']]);
+//            session(['user_tel'=>$result['user_tel']]);
+
             echo $this ->success( $result,"修改成功",10005);
-            print_r(json_decode($this ->success( $result,"修改成功",10005),true));
+            print_r(json_decode($this ->success( $result,"修改成功",10005),true));die;
+            return redirect('datum_list');
         }
+    }
+
+    /*
+     * 测试数据
+     * */
+    public function datum_list(){
+        echo session('user_tel');
+        echo session('user_id');
     }
 
 }

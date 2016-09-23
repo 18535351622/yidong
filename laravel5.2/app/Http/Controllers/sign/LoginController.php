@@ -42,12 +42,16 @@ class Logincontroller extends CommonController
                 $arr=DB::table('user')->insertGetId($result);
                 if($arr){
                    $data1=DB::table('user')->where(['user_id'=>$arr])->first();
-                    session(['user_id'=>$data1['user_id'],'user_tel'=>$data1['user_tel']]);
+                    //存入session
+                    //session(['user_id'=>$data1['user_id']]);
+                    //session(['user_tel'=>$data1['user_tel']]);
+
+
+                    //输出json数据
                     echo $this ->success( $data1,"注册成功",10003);
-                    //测试
+                    //测试数据  可以删除
                     print_r(json_decode($this ->success( $data1,"注册成功",10003),true));
-                    die;
-                    return redirect('bbb');
+//                    return redirect('bbb');
                 }
             }
 
@@ -61,8 +65,9 @@ class Logincontroller extends CommonController
      * 展示页面测试
      */
     public function bbb(){
-        echo session('user_id');
-        echo session('user_tel');
+        //echo session('user_id');
+        //echo session('user_tel');
+
         $arr=DB::table('user')->get();
         return view('sign/list',['arr'=>$arr]);
 

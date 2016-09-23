@@ -43,11 +43,15 @@ Route::any('ceshi','login\LoginController@ceshi');
 //退出
 Route::any('loginout','login\LoginController@loginout');
 
+
+
 /**
  *我的资料
  */
 Route::any('datum','datum\LoginController@index');
 Route::any('datum_add','datum\LoginController@datum_add');
+
+Route::any('datum_list','datum\LoginController@datum_list');
 
 
 
