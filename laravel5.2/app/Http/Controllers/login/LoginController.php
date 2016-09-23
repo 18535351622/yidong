@@ -26,7 +26,6 @@ class Logincontroller extends CommonController
         $data=Request::all();
         $rule = "/^\d{11}$/";
         if(preg_match($rule, $data['phone'])){
-<<<<<<< HEAD
            //检测是否注册过
             $result=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
             if($result)
@@ -49,15 +48,6 @@ class Logincontroller extends CommonController
                     die;
                     return redirect('bbb');
                 }
-=======
-            $arr=DB::table('user')->where(['user_tel'=>$data['phone']])->first();
-            if($arr){
-                session(['user_tel'=>$arr['user_tel'],'user_id'=>$arr['user_id']]);
-                echo $this -> success( 10004 ,'登录成功',$arr);die;
-                //测试数据
-                print_r(json_decode($this -> success( 10004 ,'登录成功',$arr),true));
-                return redirect('ceshi');
->>>>>>> xiaojun
             }
         }else{
             echo $this -> failure( 10002 , '请输入正确的手机号' );
@@ -67,7 +57,7 @@ class Logincontroller extends CommonController
         }
     }
 
-<<<<<<< HEAD
+
     /*
      * 展示页面
      * */

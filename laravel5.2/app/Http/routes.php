@@ -43,6 +43,8 @@ Route::any('ceshi','login\LoginController@ceshi');
 //退出
 Route::any('loginout','login\LoginController@loginout');
 
+
+
 /**
  *我的资料
  */
