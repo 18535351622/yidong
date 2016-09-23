@@ -40,9 +40,6 @@ Route::any('login','login\LoginController@index');
 Route::any('phone_login','login\LoginController@phone_login');
 //测试展示
 Route::any('ceshi','login\LoginController@ceshi');
-//退出
-Route::any('loginout','login\LoginController@loginout');
-
 
 
 /**
