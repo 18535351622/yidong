@@ -51,6 +51,8 @@ Route::any('loginout','login\LoginController@loginout');
 Route::any('datum','datum\LoginController@index');
 Route::any('datum_add','datum\LoginController@datum_add');
 
+Route::any('datum_list','datum\LoginController@datum_list');
+
 
 
 
